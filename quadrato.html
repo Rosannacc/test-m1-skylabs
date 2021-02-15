@@ -1,0 +1,190 @@
+<style>
+	
+	.rect-wrapper {
+		background: #FF0000;
+		width: 200px;
+		height: 200px;
+		box-sizing: border-box;
+		margin: 50px auto;
+		position: relative;
+	}
+	
+	.rect-top,
+	.rect-bottom {
+		background: transparent;
+		width: 90%;
+		height: 90%;
+		position: absolute;
+		margin: 5%;
+		visibility: hidden;
+	}
+
+	#d {
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 20px;
+		border-top: 1px solid white;
+		border-left: 1px solid white;
+		left: 0;
+		top: 0;		
+	}	
+
+	#c {
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 20px;
+		border-top: 1px solid white;
+		border-right: 1px solid white;
+		right: 0;
+		top: 0;	  
+	}	
+	
+	#a{
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 20px;
+		border-bottom: 1px solid white;
+		border-right: 1px solid white;
+		right: 0;
+		bottom: 0;	  
+	}
+	
+	#b{
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 20px;
+		border-bottom: 1px solid white;
+		border-left: 1px solid white;
+		left: 0;
+		bottom: 0;	  
+	}
+	
+	#b{
+		animation-name: mymoveb;
+		-webkit-animation: mymoveb 2s;  
+		-webkit-animation-iteration-count: 1; 
+		animation: mymoveb 2s;
+		animation-iteration-count: 1;
+	}		
+	
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes mymoveb {
+		from {bottom: -100px; left: -100px}
+		to {bottom-: 0px;}
+	}
+	
+	#a{
+		animation-name: mymovea;
+		-webkit-animation: mymovea 2s;  
+		-webkit-animation-iteration-count: 1; 
+		animation: mymovea 2s;
+		animation-iteration-count: 1;
+	}		
+	
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes mymovea {
+		from {bottom: -100px; right: -100px}
+		to {bottom-: 0px;}
+	}
+	
+	#d{
+		animation-name: mymoved;
+		-webkit-animation: mymoved 2s;  
+		-webkit-animation-iteration-count: 1;  
+		animation: mymoved 2s;
+		animation-iteration-count: 1;
+	}		
+	
+	@-webkit-keyframes mymoved{
+		from {top: -100px; left:-100px;}
+		to {bottom-: 0px; }
+	}
+	
+	#c{
+		animation-name: mymovec;
+		-webkit-animation: mymovec 2s;  
+		-webkit-animation-iteration-count: 1;  
+		animation: mymovec 2s;
+		animation-iteration-count: 1;
+	}		
+	
+	@-webkit-keyframes mymovec{
+		from {top: -100px; right:-100px;}
+		to {bottom-: 0px; }
+	}	
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<div class="rect-wrapper">
+	<div class="rect-top" id="c"></div>
+	<div class="rect-top" id="d"></div>
+	<div class="rect-bottom" id="a"></div>
+	<div class="rect-bottom" id="b"></div>
+</div>
+
+<script>
+	
+	var $recttop = $('.rect-top');
+	var $rectbottom = $('.rect-bottom');
+
+	$('.rect-wrapper').hover(function(){
+		$recttop.css('visibility', 'visible');
+		$rectbottom.css('visibility', 'visible');
+	});
+	
+	$('#a').hover(function(){		
+		$('#a').css('border-bottom', '3px solid green');
+		$('#a').css('border-right', '3px solid green');
+		$('#a').css('width', '30px');
+		$('#a').css('height', '30px');
+	},function(){
+		$('#a').css('border-bottom', '1px solid white');
+		$('#a').css('border-right', '1px solid white');
+		$('#a').css('width', '20px');
+		$('#a').css('height', '20px');
+    });
+	
+	$('#b').hover(function(){
+		$('#b').css('border-bottom', '3px solid green');
+		$('#b').css('border-left', '3px solid green');
+		$('#b').css('width', '30px');
+		$('#b').css('height', '30px');
+	},function(){
+		$('#b').css('border-bottom', '1px solid white');
+		$('#b').css('border-left', '1px solid white');
+		$('#b').css('width', '20px');
+		$('#b').css('height', '20px');
+    });
+	
+	$('#c').hover(function(){
+		$('#c').css('border-top', '3px solid green');
+		$('#c').css('border-right', '3px solid green');
+		$('#c').css('width', '30px');
+		$('#c').css('height', '30px');
+	},function(){
+		$('#c').css('border-top', '1px solid white');
+		$('#c').css('border-right', '1px solid white');
+		$('#c').css('width', '20px');
+		$('#c').css('height', '20px');
+    });
+	
+	$('#d').hover(function(){
+		$('#d').css('border-top', '3px solid green');
+		$('#d').css('border-left', '3px solid green');
+		$('#d').css('width', '30px');
+		$('#d').css('height', '30px');
+	},function(){
+		$('#d').css('border-top', '1px solid white');
+		$('#d').css('border-left', '1px solid white');
+		$('#d').css('width', '20px');
+		$('#d').css('height', '20px');
+    });
+
+</script>

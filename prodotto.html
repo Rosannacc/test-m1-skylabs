@@ -1,0 +1,210 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>eCommerce Product Detail</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styleprodotto.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  </head>
+	
+  <body>
+	<!--********************-->
+	
+	
+	<!--******-->
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-dark">			
+				<div class="row">
+					<div class="col-md-8">
+						<div class="row navbar-nav ">
+							<div class="col-md-4"><a href="#" class="nav-item nav-link active">Home</a></div>
+							<div class="col-md-4"><a href="#" class="nav-item nav-link active">Prodotti</a></div>												
+							<div class="col-md-4"><a href="#" class="nav-item nav-link active">Contatti</a></div>
+						</div>
+					</div>
+					<div class="col-md-2"></div>					
+					<div class="col-md-2">
+						<div class="row navbar-nav ">
+							<a href="#" class="nav-item nav-link active" id='carrello'>0 <i class="fa fa-shopping-cart"></i></a>
+						</div>
+					</div>
+				</div>				
+			
+		</nav>
+		<div class="card">
+			<div class="container-fliud">
+				<div class="wrapper row">
+				<img class="invisibile" id="adesivofront" src="img/1.png">			
+					<div class="preview col-md-6">
+						
+						<div class="preview-pic tab-content">
+						  <div class="tab-pane active" id="pic-1"><img src="img/scarpadestra.png" /></div>
+						  <div class="tab-pane" id="pic-2"><img src="img/right_back.png" /></div>
+						  <div class="tab-pane" id="pic-3"><img src="img/right_inner.png" /></div>
+						  <div class="tab-pane" id="pic-4"><img src="img/right_outer.png" /></div>
+						</div>
+						<ul class="preview-thumbnail nav nav-tabs">
+							<li class="pic1 active"><a data-target="#pic-1" data-toggle="tab"><img src="img/scarpadestra.png" /></a></li>
+						  <li><a class="pic" data-target="#pic-2" data-toggle="tab"><img src="img/right_back.png" /></a></li>
+						  <li><a class="pic" data-target="#pic-3" data-toggle="tab"><img src="img/right_inner.png" /></a></li>
+						  <li><a class="pic" data-target="#pic-4" data-toggle="tab"><img src="img/right_outer.png" /></a></li>
+						  
+						</ul>
+						
+					</div>
+					<div class="details col-md-6">
+						<h3 class="product-title">Scarpa Donna</h3>
+						<div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="review-no">41 reviews</span>
+						</div>
+						<p class="product-description">Fantastiche scarpe da donna personalizzabili</p>
+						<h4 class="price">Prezzo: <span>180 &euro;</span></h4>
+						<div class="row">
+							<div class="col-xs-6" > 
+								<h5 class="sizes">Sizes:</h5> 
+								<button class="btn btn-light btn-sm taglia" id="37">37</button> 
+								<button class="btn btn-light btn-sm taglia" id="38">38</button> 
+								<button class="btn btn-light btn-sm taglia" id="39">39</button> 
+							</div>
+						</div>						
+						<div class="row">
+							<div class="col-xs-8" >
+								<h5 class="colors">Adesivo:</h5>
+								<ul class="preview-thumbnail nav nav-tabs">
+									<li class="active adesivo" id="ad1"><a data-target="#ad-1" data-toggle="tab"><img class="ades" id="img1" src="img/1.png" /></a></li>
+									<li class="adesivo" id="ad2"><a data-target="#ad-2" data-toggle="tab"><img class="ades" id="img2" src="img/2.png" /></a></li>
+									<li class="adesivo" id="ad3"><a data-target="#ad-3" data-toggle="tab"><img class="ades" id="img3" src="img/3.png" /></a></li>
+									<li class="adesivo" id="ad4"><a data-target="#ad-4" data-toggle="tab"><img class="ades" id="img4" src="img/4.png" /></a></li>
+									<li class="adesivo" id="ad5"><a data-target="#ad-5" data-toggle="tab"><img class="ades" id="img5" src="img/5.png" /></a></li>
+									<li class="adesivo" id="ad6"><a data-target="#ad-6" data-toggle="tab"><img class="ades" id="img6" src="img/6.png" /></a></li>						  
+								</ul>
+							<div><br>					
+						<div class="action">
+							<button class="add-to-cart btn btn-default" type="button" id="myBtn">add to cart</button>
+							<button class="like btn btn-default" type="button"><span class="fa fa-heart"></span></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="col-md-4"><a href="#" class="footer-nav">Home</a></div>
+					<div class="col-md-4"><a href="#" class="footer-nav">Chi siamo</a></div>												
+					<div class="col-md-4"><a href="#" class="footer-nav">Contatti</a></div>
+				</div>
+				<div class="col-md-4"></div>
+				<div class="col-md-2">
+					<a href="#" class="footer-nav"><i class="fa fa-facebook-square"></i></a>
+					<a href="#" class="footer-nav"><i class="fa fa-google-plus-square"></i></a>
+					<a href="#" class="footer-nav"><i class="fa fa-twitter-square"></i></a>
+				</div>					
+			</div>
+		</div>
+	</div>
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					 <h4 class="modal-title" id="myModalLabel">Riepilogo ordine</h4>
+
+				</div>
+				<div class="modal-body">...</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>					
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	
+  </body>
+  
+  <script type="text/javascript">
+	$(document).ready(function () {		
+		
+		if ($('#pic-1').hasClass('active')){						
+			$("#adesivofront").removeClass("invisibile");
+			$("#adesivofront").addClass("visibile");
+		}else{
+			$("#adesivofront").removeClass("visibile");
+			$("#adesivofront").addClass("invisibile");
+		}
+		
+		var taglia;
+		var adesivo;
+		var src;
+		$(".taglia").click(function(){			
+			taglia = $(this).attr("id");// this will give object of current clicked link
+		});
+		$(".ades").click(function(){			
+			adesivo = $(this).attr("id");
+			var res = adesivo.split("img");
+			var idimg = "#img"+res[1];
+			src = "img/"+res[1]+".png";
+			console.log(src);
+		});
+		
+		$("#myBtn").click(function(){
+			$("#myModal .modal-body").html('<h4>Scarpa donna</h4><h4>Prezzo: 180 &euro;</h4><h4>Size: </h4>'+taglia+'<h4>Adesivo scelto</h4><img src="'+src+'" style="height:50px; width:50px;"/>');
+			$('#myModal').modal('show');
+			
+		});
+		
+		
+		$(".adesivo").click(function(){
+			var idimage = $(this).attr("id");			
+			var res = idimage.split("ad");			
+			var idimg = "#img"+res[1];
+			var srcimg = "img/"+res[1]+".png";			
+			$("#adesivofront").attr("src",srcimg);			
+		});
+		
+		
+		
+	});
+	
+	$(".pic").click(function(){
+		$("#adesivofront").hide();
+		setTimeout(function() { $("#adesivofront").show(); }, 500);
+		$("#adesivofront").removeClass("visibile");
+		$("#adesivofront").addClass("mini");
+	});
+	
+	$(".pic1").click(function(){
+		$("#adesivofront").hide();
+		setTimeout(function() { $("#adesivofront").show(); }, 500);
+		$("#adesivofront").removeClass("mini");
+		$("#adesivofront").addClass("visibile");
+		
+		
+	});
+	
+	
+  
+  </script>
+</html>
