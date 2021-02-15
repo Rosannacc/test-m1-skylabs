@@ -14,7 +14,7 @@ Oltre a elencare qui di seguito le modifiche da apportare al codice, ho realizza
 
 PUNTO 2
 
-Aprire nel browser file "quadrato.html".
+Lanciare file "quadrato.html".
 
 
 ****************************************************************************************************
