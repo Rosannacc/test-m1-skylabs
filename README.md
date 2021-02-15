@@ -1,7 +1,7 @@
 # test-m1-skylabs
 TEST - M1
 
--PUNTO 1:
+PUNTO 1:
 
 Oltre a elencare qui di seguito le modifiche da apportare al codice, ho realizzato direttamente le modifiche che potrete visualizzare, utilizzando il file "menu.html".
 - Per prima cosa ho inserito una griglia bootstrap, in modo da dare giusti spazi alle varie sezioni.
